@@ -1,0 +1,15 @@
+* {
+  margin 0;
+  padding 0;
+}
+
+
+/* mobil */
+@media screen and (max-width: 785px) {
+}
+/* tablet */
+@media screen and (min-width: 785px) {
+    }
+/* desktop */
+@media screen and (min-width: 1089px) {
+}
