@@ -1,0 +1,5 @@
+ <button type="button" class="btn">Download</button>
+
+.btn {
+  background-color: #D1C5AE;
+}
