@@ -1,0 +1,145 @@
+.stjerne_img{
+    width: 70%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: #d1c5ae;
+}
+
+.stjernetegn_kasse{
+    text-align: center;
+    color: #d1c5ae;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+h1{
+    text-align: center;
+    margin: 60px;
+    font-size: 24px;
+} 
+h2{
+    font-size: 20px;
+    padding: 20px;
+}
+
+.fiskene{
+    margin-bottom: 60px;
+}
+
+  /* tablet */
+  @media screen and (min-width: 785px) {
+    h1{
+        margin: 70px;
+        font-size: 28px;
+    }
+    .container-fluid{
+        display: grid;
+        grid-template-areas: 
+        "st1 st2 st3"
+        "st4 st5 st6"
+        "st7 st8 st9"
+        "st10 st11 st12";
+        margin-bottom: 70px;
+    }
+    .vaedder{
+        grid-area: st1;
+    }
+    .tyren{
+        grid-area: st2;
+    }
+    .tvillinger{
+        grid-area: st3;
+    }
+    .krebsen{
+        grid-area: st4;
+    }
+    .løven{
+        grid-area: st5;
+    }
+    .jomfruen{
+        grid-area: st6;
+    }
+    .vaegten{
+        grid-area: st7;
+    }
+    .skorpionen{
+        grid-area: st8;
+    }
+    .skytten{
+        grid-area: st9;
+    }
+    .stenbukken{
+        grid-area: st10;
+        margin-bottom: 50px;
+    }
+    .vandmanden{
+        grid-area: st11;
+        margin-bottom: 50px;
+    }
+    .fiskene{
+        grid-area: st12;
+        margin-bottom: 50px;
+    }
+    .stjernetegn_kasse{
+        margin: 5px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1089px) {
+    h1{
+        margin: 90px;
+        font-size: 30px;
+    }
+    .container-fluid{
+        display: grid;
+        grid-template-areas: 
+        "st1 st2 st3 st4"
+        "st5 st6 st7 st8"
+        "st9 st10 st11 st12";
+        max-width: 1900px;
+        margin-bottom: 90px;
+    }
+    .vaedder{
+        grid-area: st1;
+    }
+    .tyren{
+        grid-area: st2;
+    }
+    .tvillinger{
+        grid-area: st3;
+    }
+    .krebsen{
+        grid-area: st4;
+    }
+    .løven{
+        grid-area: st5;
+    }
+    .jomfruen{
+        grid-area: st6;
+    }
+    .vaegten{
+        grid-area: st7;
+    }
+    .skorpionen{
+        grid-area: st8;
+    }
+    .skytten{
+        grid-area: st9;
+    }
+    .stenbukken{
+        grid-area: st10;
+    }
+    .vandmanden{
+        grid-area: st11;
+    }
+    .fiskene{
+        grid-area: st12;
+    }
+    .stjernetegn_kasse{
+        margin: 5px;
+    }
+}
