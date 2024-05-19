@@ -1,14 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Cinzel Decorative", serif;
+  margin: 0;
+  padding: 0;
 }
-
 body{
-    background-color: #ede5da;
+    background-color: #ede5da !important;
 }
-p{
-    font-family: "Lustria", serif;;
+h3 {
+    font-family: "Lustria", serif;
 }
 
 /*NAVIGATIONSBAR*/
@@ -48,6 +46,229 @@ p{
     padding-left: 20px;
 }
 
+/* mobil */
+@media screen and (max-width: 785px) {
+    .main-container {
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column; /* Adjusted for mobile */
+        align-items: center;
+        margin: 20px;
+    }
+
+    .left-section, .right-section {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
+
+    .image {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .header-black {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: black;
+        font-family: 'Cinzel Decorative';
+      }
+
+      .text-black {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: black;
+        font-family: "Lustria", serif;
+      }
+
+      .header-1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #ede5da;
+        font-family: 'Cinzel Decorative';
+    }
+
+      .text-1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: 20px; /* Start ændret for mobil*/
+        margin-left: 0;
+        margin-right: 0; /* Slut ændret for mobil*/
+        color: white;
+      }
+
+
+      .kontakt-section{
+        flex-grow: 2;
+      }
+
+      .form-control{
+        background-color: #EDE5DA;
+      }
+
+
+      .btn {
+        background-color: #D1C5AE;
+      }
+
+
+
+}
+/* tablet */
+@media screen and (min-width: 785px) {
+    .main-container {
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 20px;
+    }
+
+    .left-section {
+        flex-grow: 1;
+    }
+
+    .image {
+        width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+
+
+    .right-section {
+        flex-grow: 1;
+        padding-left: 20px;
+    }
+
+
+  .kontakt-section{
+    flex-grow: 2;
+  }
+
+  .form-control{
+    background-color: #EDE5DA;
+  }
+
+
+  .btn {
+    background-color: #D1C5AE;
+  }
+
+    .header-black {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: black;
+        font-family: 'Cinzel Decorative';
+    }
+
+    .text-black {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: black;
+        font-family: "Lustria", serif;
+    }
+
+    .header-1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #ede5da;
+        font-family: 'Cinzel Decorative';
+    }
+
+    .text-1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        color: white;
+    }
+}
+/* desktop */
+@media screen and (min-width: 1089px) {
+    .main-container {
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 20px;
+    }
+
+    .left-section {
+        flex-grow: 1;
+    }
+
+    .image {
+        width: 400px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .right-section {
+        flex-grow: 1;
+        padding-left: 20px;
+    }
+
+
+    .kontakt-section{
+      flex-grow: 2;
+    }
+
+    .form-control{
+      background-color: #EDE5DA;
+    }
+
+
+    .btn{
+      background-color: #D1C5AE;
+      text-align: center;
+    }
+
+    .header-black {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: black;
+        font-family: 'Cinzel Decorative';
+    }
+
+    .text-black {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: black;
+        font-family: "Lustria", serif;
+    }
+
+    .header-1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-left: 40px;
+        color: #D1C5AE;
+        font-family: 'Cinzel Decorative';
+
+    }
+
+    .text-1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+        color: white;
+    }
+}
 /*FOOTER*/
 .footer1 {
     background-color: #D1C5AE;
@@ -68,7 +289,7 @@ p{
     font-style: normal;
 }
 
-p { 
+p {
     font-family: "Lustria", serif;
 }
 
@@ -83,15 +304,4 @@ transition: all .2s ease-in-out;
 /*COPYRIGHT*/
 .col-footer {
     padding-top: 10px;
-} 
-  
-  
-  /* mobil */
-  @media screen and (max-width: 785px) {
-  }
-  /* tablet */
-  @media screen and (min-width: 785px) {
-      }
-  /* desktop */
-  @media screen and (min-width: 1089px) {
-  }
+}
