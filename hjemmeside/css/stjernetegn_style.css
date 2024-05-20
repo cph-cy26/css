@@ -1,0 +1,228 @@
+.stjerne_img{
+    width: 60%;
+    height: auto;
+}
+.img_sten{
+    width: 60%;
+    height: auto;
+}
+.img_element{
+    width: 60%;
+    height: auto;
+}
+.img_farve{
+    width: 60%;
+    height: auto;
+}
+.img_planet{
+    width: 60%;
+    height: auto;
+}
+h3{
+    font-size: 18px;
+}
+.accordion{
+    --bs-accordion-btn-color: #d1c5ae;
+    --bs-accordion-color: #D1C5AE;
+    --bs-accordion-btn-bg: #000;
+    --bs-accordion-bg: #000;
+    --bs-accordion-active-bg: #000;
+    --bs-accordion-active-color: #D1C5AE;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-icon-color: #d1c5ae;
+    --bs-accordion-icon-active-color: #d1c5ae;
+    --bs-accordion-btn-icon-width: 50px;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d1c5ae'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d1c5ae'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    
+}
+
+.accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+.accordion-button{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.tekst_forst{
+    display: none;
+}
+
+.ct1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.stjerne_info_kasse{
+    background-color: #ede5da;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.img_blomst{
+    width: 100%;
+    height: auto;
+}
+.stjerne_info_kasse h2{
+    color: #000;
+    font-size: 20px;
+}
+
+.h1d{
+    font-size: 24px;
+    font-family: "Cinzel Decorative", serif;
+    margin-top: 15px;
+}
+.vh1d{
+    margin-top: -10px;
+}
+.stjerne_info_kasse h2{
+    padding: 15px;
+}
+
+ /* tablet */
+ @media screen and (min-width: 785px) {
+    .tekst_forst{
+        display: block;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .tekst_mobil{
+        display: none;
+    }
+    .accordion-button{
+        display: grid;
+        grid-template-areas: 
+        "box1 box2 box2"
+        "box1 box3 box3"
+        "box1 .  .";
+    }
+    .stjerne_img{
+        grid-area: box1;
+    }
+    
+    .h1d{
+        grid-area: box2;
+    }
+    .tekst_forst{
+        grid-area: box3;
+    }
+
+    .accordion-body{
+        display: grid;
+        grid-template-areas: 
+        "boks1 boks1 boks1 "
+        "tex1 tex1 tex1 "
+        "tex1 tex1 tex1 "
+        "tex1 tex1 tex1 "
+        "tex2 boks2 boks2 ";
+    }
+    .stjerne_kasse_info1{
+        grid-area: boks1;
+    }
+    .stjerne_kasse_info12{
+        grid-area: boks2;
+    }
+    .stjerne_info_tekst_stor{
+        grid-area: tex1;
+        margin-top: 30px;
+    }
+    .stjerne_info_tekst_lille{
+        grid-area: tex2;
+    }
+
+    .stjerne_kasse_info1{
+        display: grid;
+        grid-template-areas: 
+        "blom sten frav";
+    }
+    .stjerne_kasse_info2{
+        display: grid;
+        grid-template-areas: 
+        "elem plan"
+        ". .";
+    }
+
+    .stjerne_kasse_1{
+        grid-area: blom;
+    }
+    .stjerne_kasse_2{
+        grid-area: sten;
+    }
+    .stjerne_kasse_3{
+        grid-area: frav;
+    }
+    .stjerne_kasse_4{
+        grid-area: elem;
+    }
+    .stjerne_kasse_5{
+        grid-area: plan;
+    }
+
+    .stjerne_info_kasse{
+        margin: 10px;
+    }
+
+}
+
+
+/* desktop */
+@media screen and (min-width: 1089px) {
+    h1{
+        margin: 90px;
+        font-size: 30px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .container-fluid{
+        max-width: 1600px;
+    }
+    .stjerne_img{
+        width: 40%;
+        height: auto;
+    }
+    .accordion-button{
+        grid-template-areas: 
+        "box1 box2 box2"
+        "box1 box3 box3"
+        "box1 .  .";
+    }
+    .accordion-button{
+        padding: 0 150px 0 150px;
+    }
+    .accordion-body{
+        display: grid;
+        grid-template-areas: 
+        "boks1 boks1 boks1 "
+        "tex1 tex1 tex2 "
+        "tex1 tex1 tex2 "
+        "tex1 tex1 boks2 "
+        "tex1 tex1 boks2 ";
+    }
+    .stjerne_info_tekst_stor{
+        padding-right: 20px;
+    }
+    .img_blomst{
+        width: 50%;
+        height: auto;
+    }
+    .img_sten{
+        width: 40%;
+        height: auto;
+    }
+    .img_farve{
+        width: 50%;
+        height: auto;
+    }
+    .stjerne_info_tekst_lille{
+        margin-top: 30px;
+    }
+    .stjerne_kasse_info2{
+        margin-top: 30px;
+    }
+    
+}
